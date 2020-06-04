@@ -1,0 +1,63 @@
+apply plugin: 'com.android.library'
+apply from: "../MobSDK.gradle"//MobSDK需要在每个module下依赖，否则module无法使用
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+
+        testInstrumentationRunner rootProject.ext.dependencies["androidJUnitRunner"]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    resourcePrefix "public_" //给 Module 内的资源名增加前缀, 避免资源名冲突
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api rootProject.ext.dependencies["common-res"]
+    api rootProject.ext.dependencies["common-sdk"]
+    api rootProject.ext.dependencies["design"]
+    api rootProject.ext.dependencies["roundedImageView"]
+    api rootProject.ext.dependencies["circleImageView"]
+    api rootProject.ext.dependencies["auto-page-layout"]
+    api rootProject.ext.dependencies["custom-dialog"]
+    //GSYVideoPlayer
+    api rootProject.ext.dependencies["GSYVideoPlayer-java"]
+    api rootProject.ext.dependencies["GSYVideoPlayer-exo2"]
+    //Toasty
+    api rootProject.ext.dependencies["toasty"]
+    //ImagePicker
+    api project(":ThirdLibrarys:ImagePicker")
+    //七牛云
+    api rootProject.ext.dependencies["qiniu-sdk"]
+    //图片缩放框架
+    api rootProject.ext.dependencies["imagezoom"]
+    //BasePopup
+    api rootProject.ext.dependencies["BasePopup"]
+    api rootProject.ext.dependencies["BasePopup-compat-support"]
+    api rootProject.ext.dependencies["BasePopup-compat-lifecycle"]
+    //SmartSwipe
+    api rootProject.ext.dependencies["smart-swipe"]
+    api rootProject.ext.dependencies["smart-swipe-support"]
+    //Parceler
+    api rootProject.ext.dependencies["parceler-api"]
+    //FileDownloader：下载引擎
+    api rootProject.ext.dependencies["filedownloader"]
+}

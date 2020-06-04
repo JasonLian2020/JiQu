@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--*************************BottomSheetDialog Style*************************-->
+    <style name="public_BottomSheetDialog.Base" parent="Theme.Design.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="bottomSheetStyle">@style/public_BottomSheet.Modal.Base</item>
+    </style>
+    <!--*************************BottomSheetDialog Style*************************-->
+</resources>

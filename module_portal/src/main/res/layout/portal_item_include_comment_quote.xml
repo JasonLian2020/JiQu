@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/quoteParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/portal_comment_dialog_padding_left"
+    android:paddingTop="10dp"
+    android:paddingEnd="@dimen/portal_comment_dialog_padding_right"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/quoteLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="13dp">
+
+        <!--文本-->
+        <TextView
+            android:id="@+id/quoteContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="15dp"
+            android:textColor="@color/public_text_main"
+            android:textSize="32sp" />
+
+        <!--图片-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/quoteRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="3dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/quoteLayout"
+        android:layout_alignBottom="@id/quoteLayout"
+        android:background="#DDDDDD" />
+</RelativeLayout>

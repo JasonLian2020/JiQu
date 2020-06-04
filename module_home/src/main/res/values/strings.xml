@@ -1,0 +1,8 @@
+<resources>
+    <string name="home_module_name">ModuleHome</string>
+    <string name="home_title_no_interesting">不感兴趣</string>
+    <string name="home_title_repetition_content">内容重复</string>
+    <string name="home_title_bad_content">内容引起不适</string>
+    <string name="home_title_ban_author">屏蔽作者</string>
+    <string name="home_title_ban_topic">屏蔽话题</string>
+</resources>

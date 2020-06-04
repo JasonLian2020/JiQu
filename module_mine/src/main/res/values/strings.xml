@@ -1,0 +1,7 @@
+<resources>
+    <string name="mine_module_name">ModuleMine</string>
+    <string name="mine_home_title">我的</string>
+    <!--我的页面-->
+    <string name="mine_user_def_name">登录/注册</string>
+    <string name="mine_user_def_desc">欢迎来到皮皮虾</string>
+</resources>

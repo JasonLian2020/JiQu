@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.jason.imagepicker.ui.widget.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/mediaCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/mediaChoose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_margin="5dp"
+        android:background="@drawable/media_bg_choose_selector"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/mediaTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <!--蒙板-->
+    <ImageView
+        android:id="@+id/mediaMask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77FFFFFF" />
+
+</me.jason.imagepicker.ui.widget.SquareFrameLayout>

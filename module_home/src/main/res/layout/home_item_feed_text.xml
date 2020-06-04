@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/public_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/home_layout_feed_user" />
+
+    <FrameLayout
+        android:id="@+id/feedTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/home_feed_text_padding_left"
+        android:paddingEnd="@dimen/home_feed_text_padding_right">
+
+        <TextView
+            android:id="@+id/feedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="15dp"
+            android:maxLines="7"
+            android:textColor="@color/public_text_main"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/feedTextUnfold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/public_white"
+            android:lines="1"
+            android:paddingBottom="15dp"
+            android:text="...展开"
+            android:textColor="#4A6191"
+            android:textSize="32sp" />
+    </FrameLayout>
+
+    <include layout="@layout/home_layout_feed_god" />
+
+    <include layout="@layout/home_layout_feed_input" />
+</LinearLayout>

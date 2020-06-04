@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inputLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingStart="40dp"
+    android:paddingTop="15dp"
+    android:paddingEnd="40dp"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:id="@+id/commentReply"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:background="@drawable/portal_bg_input_selector"
+        android:drawableEnd="@mipmap/portal_icon_comment_reply"
+        android:drawablePadding="13dp"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/public_text_third"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:id="@+id/commentMore"
+        android:layout_width="47dp"
+        android:layout_height="66dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="108dp"
+        android:paddingStart="5dp"
+        android:paddingTop="32dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="27dp"
+        android:src="@mipmap/portal_icon_comment_more" />
+
+    <ImageView
+        android:id="@+id/commentLike"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/portal_icon_comment_like_selector" />
+
+    <TextView
+        android:id="@+id/commentLikeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@id/commentLike"
+        android:text="19"
+        android:textColor="@color/portal_text_comment_like_selector"
+        android:textSize="26sp" />
+</RelativeLayout>

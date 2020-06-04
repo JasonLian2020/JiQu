@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="public_base_btn_radius">6dp</dimen>
+
+    <!--大小-->
+    <dimen name="public_titlebar_height">100dp</dimen>
+    <dimen name="public_titlebar_left_height">90dp</dimen>
+    <dimen name="public_titlebar_right_height">90dp</dimen>
+
+    <!--字体-->
+    <dimen name="public_titlebar_text_size">34sp</dimen>
+</resources>

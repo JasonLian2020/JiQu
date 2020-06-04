@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="portal_comment_dialog_padding_left">118dp</dimen>
+    <dimen name="portal_comment_dialog_padding_right">40dp</dimen>
+</resources>

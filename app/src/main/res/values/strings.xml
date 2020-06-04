@@ -1,0 +1,8 @@
+<resources>
+    <string name="public_app_name">极趣</string>
+
+    <string name="main_home_title">首页</string>
+    <string name="main_find_title">发现</string>
+    <string name="main_message_title">消息</string>
+    <string name="main_mine_title">我的</string>
+</resources>

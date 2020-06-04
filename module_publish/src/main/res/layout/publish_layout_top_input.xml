@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/topContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:gravity="start"
+        android:hint="加个话题，内容会被更多人看到哦"
+        android:lineSpacingExtra="10dp"
+        android:maxLines="6"
+        android:minLines="3"
+        android:textColor="@color/public_text_main"
+        android:textColorHint="@color/public_text_third"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:id="@+id/topTopicAdd"
+        android:layout_width="147dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/publish_bg_add_topic_selector"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/topTopicText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加换题"
+            android:textColor="#E02020"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="4dp"
+            android:src="@mipmap/publish_icon_arrorw_right" />
+    </LinearLayout>
+</LinearLayout>

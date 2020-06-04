@@ -1,0 +1,20 @@
+<resources>
+    <string name="portal_module_name">ModulePortal</string>
+    <string name="portal_detail_name">帖子</string>
+    <string name="portal_comment_name">评论详情</string>
+    <!--comment-->
+    <string name="portal_comment_reply_text">%1$s条回复</string>
+    <string name="portal_comment_empty_reply_text">回复</string>
+    <string name="portal_dialog_input_hint_default">文明发言才能交到真皮友哦~</string>
+    <string name="portal_dialog_input_hint_user">回复@%1$s</string>
+    <!--popup-->
+    <string name="portal_title_more_copy">复制</string>
+    <string name="portal_title_more_delete">删除</string>
+    <string name="portal_title_more_complain">举报</string>
+    <!--dialog-->
+    <string name="portal_dialog_delete_comment_title">是否删除这条评论？</string>
+    <string name="portal_dialog_delete_comment_cancel">取消</string>
+    <string name="portal_dialog_delete_comment_ok">确认</string>
+    <!--list-->
+    <string name="portal_dialog_comment_count">%1$s条回复</string>
+</resources>

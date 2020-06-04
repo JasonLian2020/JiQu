@@ -1,0 +1,12 @@
+<resources>
+    <!--启动style-->
+    <style name="public_AppTheme.Splash" parent="public_AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@mipmap/public_bg_splash</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <!--true:图片不会被压缩比例，但是会被虚拟导航键挡住。理解为虚拟导航键布局浮动在启动图上，启动图全屏充满-->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

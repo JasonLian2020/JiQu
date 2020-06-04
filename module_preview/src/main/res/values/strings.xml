@@ -1,0 +1,4 @@
+<resources>
+    <string name="preview_module_name">ModulePreview</string>
+    <string name="preview_image_count">%1$d/%2$d</string>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <me.jason.imagepicker.ui.widget.PreviewViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--控制面板-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--顶部-->
+        <RelativeLayout
+            android:id="@+id/previewTopLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ip_preview_mask">
+
+            <FrameLayout
+                android:id="@+id/previewTitleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ip_title_layout_height">
+
+                <ImageView
+                    android:id="@+id/previewClose"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:padding="20dp"
+                    android:src="@drawable/public_icon_close_white" />
+
+                <TextView
+                    android:id="@+id/previewChoose"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/preview_bg_choose_selector"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/previewTips"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/previewTitleLayout"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center_vertical"
+                android:text="选择图片时，不能选择视频"
+                android:textColor="@android:color/white"
+                android:textSize="28sp" />
+        </RelativeLayout>
+
+        <!--底部-->
+        <RelativeLayout
+            android:id="@+id/previewBottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/ip_preview_mask">
+
+            <!--Image-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ip_preview_item_height"
+                android:paddingEnd="@dimen/ip_preview_item_padding" />
+
+            <Button
+                android:id="@+id/previewImageCompleted"
+                android:layout_width="130dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/recyclerView"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/picker_bg_main_selector"
+                android:gravity="center"
+                android:text="@string/preview_item_completed_btn_text1"
+                android:textColor="@android:color/white"
+                android:textSize="28sp" />
+
+            <!--Video-->
+            <include
+                android:id="@+id/previewVideoLayout"
+                layout="@layout/preview_layout_video_control" />
+
+            <Button
+                android:id="@+id/previewVideoCompleted"
+                android:layout_width="130dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/previewVideoLayout"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/picker_bg_main_selector"
+                android:gravity="center"
+                android:text="@string/preview_item_completed_btn_text1"
+                android:textColor="@android:color/white"
+                android:textSize="28sp" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

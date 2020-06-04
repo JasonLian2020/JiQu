@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.jason.imagepicker.ui.widget.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/videoIcon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:riv_corner_radius="10dp" />
+
+    <ImageView
+        android:id="@+id/videoDelete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_margin="10dp"
+        android:src="@mipmap/publish_icon_delete" />
+</me.jason.imagepicker.ui.widget.SquareFrameLayout>

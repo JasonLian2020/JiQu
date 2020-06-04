@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/godTag"
+    android:layout_width="76dp"
+    android:layout_height="97dp"
+    android:layout_gravity="end"
+    android:layout_marginStart="40dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginEnd="190dp"
+    android:src="@mipmap/portal_icon_god_tag" />

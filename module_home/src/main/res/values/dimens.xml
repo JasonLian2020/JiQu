@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="home_feed_text_padding_left">40dp</dimen>
+    <dimen name="home_feed_text_padding_right">40dp</dimen>
+</resources>

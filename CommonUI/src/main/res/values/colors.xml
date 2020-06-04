@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--base btn main-->
+    <color name="public_bg_base_btn_main_normal">#30C27B</color>
+    <color name="public_bg_base_btn_main_pressed">#2AAC6D</color>
+    <color name="public_bg_base_btn_main_disable">#8030C27B</color>
+    <color name="public_text_base_btn_main_normal">#FFFFFF</color>
+    <color name="public_text_base_btn_main_pressed">#FFFFFF</color>
+    <color name="public_text_base_btn_main_disable">#80FFFFFF</color>
+
+    <!--base btn second-->
+    <color name="public_bg_base_btn_second_normal">#FFFFFF</color>
+    <color name="public_bg_base_btn_second_pressed">#F0F0F0</color>
+    <color name="public_bg_base_btn_second_disable">#66FFFFFF</color>
+    <color name="public_text_base_btn_second_normal">#30C27B</color>
+    <color name="public_text_base_btn_second_pressed">#30C27B</color>
+    <color name="public_text_base_btn_second_disable">#8030C27B</color>
+
+    <!--rectangle btn main-->
+    <color name="public_bg_rectangle_btn_main_normal">#30C27B</color>
+    <color name="public_bg_rectangle_btn_main_pressed">#2AAC6D</color>
+    <color name="public_bg_rectangle_btn_main_disable">#8030C27B</color>
+    <color name="public_text_rectangle_btn_main_normal">#FFFFFF</color>
+    <color name="public_text_rectangle_btn_main_pressed">#FFFFFF</color>
+    <color name="public_text_rectangle_btn_main_disable">#80FFFFFF</color>
+
+    <!--rectangle btn second-->
+    <color name="public_bg_rectangle_btn_second_normal">#FFFFFF</color>
+    <color name="public_bg_rectangle_btn_second_pressed">#F0F0F0</color>
+    <color name="public_bg_rectangle_btn_second_disable">#66FFFFFF</color>
+    <color name="public_text_rectangle_btn_second_normal">#30C27B</color>
+    <color name="public_text_rectangle_btn_second_pressed">#30C27B</color>
+    <color name="public_text_rectangle_btn_second_disable">#8030C27B</color>
+
+    <!--gradient btn main-->
+    <color name="public_text_gradient_btn_main_normal">#FFFFFF</color>
+    <color name="public_text_gradient_btn_main_pressed">#FFFFFF</color>
+    <color name="public_text_gradient_btn_main_disable">#FFFFFF</color>
+
+    <!--Base Color-->
+    <color name="public_colorAccent">#FF4081</color>
+    <color name="public_colorPrimary">#FFFFFF</color>
+    <color name="public_colorPrimary_compatibility">#C7C7C7</color>
+    <color name="public_colorPrimaryDark">#FFFFFF</color>
+    //Transparent Color Percent
+    <color name="public_transparent_90">#E6000000</color>
+    <color name="public_transparent_80">#CC000000</color>
+    <color name="public_transparent_70">#B3000000</color>
+    <color name="public_transparent_60">#99000000</color>
+    <color name="public_transparent_50">#80000000</color>
+    <color name="public_transparent_40">#66000000</color>
+    <color name="public_transparent_30">#4D000000</color>
+    <color name="public_transparent_20">#33000000</color>
+    <color name="public_transparent_10">#1A000000</color>
+    <color name="public_transparent">#00000000</color>
+    //Global UI Design
+    <color name="public_theme_main">#FE5553</color><!--主题主色-->
+    <color name="public_theme_second">#FFBB22</color><!--主题第二辅助色，辅助橙-->
+    <color name="public_theme_third">#F44336</color><!--主题第三辅助色，辅助红-->
+    <color name="public_text_main">#333333</color><!--字体主色-->
+    <color name="public_text_second">#666666</color><!--字体第二辅助色-->
+    <color name="public_text_third">#999999</color><!--字体第三辅助色-->
+    <color name="public_text_weak">#7f999999</color><!--字体弱化、输入框提示的颜色-->
+    <color name="public_divider_main">#F0F0F0</color><!--分割线-->
+    <color name="public_background_main">#F4F4F4</color><!--主背景色-->
+    <color name="public_background_second">#FAFAFA</color><!--辅助背景色-->
+    <color name="public_price_main">#F44336</color><!--价格-->
+    <color name="public_warning_main">#F44336</color><!--警告色-->
+    <color name="public_stroke_main">#F0F0F0</color><!--主描边-->
+    <color name="public_hyberlink_main">#576B95</color><!--超链接，用于点击跳转到web页面-->
+</resources>

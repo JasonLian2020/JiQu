@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shareLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/public_transparent_50">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="456dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/shareWechat"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:src="@mipmap/public_icon_share_wechat" />
+
+            <ImageView
+                android:id="@+id/shareQQ"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@id/shareWechat"
+                android:src="@mipmap/public_icon_share_qq" />
+
+            <ImageView
+                android:id="@+id/shareWechatMoments"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@id/shareQQ"
+                android:src="@mipmap/public_icon_share_wechat_moments" />
+
+            <ImageView
+                android:id="@+id/shareQzone"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@id/shareWechatMoments"
+                android:src="@mipmap/public_icon_share_qzone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shareWechat"
+                android:layout_marginTop="15dp"
+                android:layout_toStartOf="@id/shareQQ"
+                android:gravity="center"
+                android:text="微信"
+                android:textColor="@color/public_white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shareQQ"
+                android:layout_marginTop="15dp"
+                android:layout_toStartOf="@id/shareWechatMoments"
+                android:layout_toEndOf="@id/shareWechat"
+                android:gravity="center"
+                android:text="QQ"
+                android:textColor="@color/public_white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shareWechatMoments"
+                android:layout_marginTop="15dp"
+                android:layout_toStartOf="@id/shareQzone"
+                android:layout_toEndOf="@id/shareQQ"
+                android:gravity="center"
+                android:text="朋友圈"
+                android:textColor="@color/public_white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shareQzone"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/shareWechatMoments"
+                android:gravity="center"
+                android:text="QQ空间"
+                android:textColor="@color/public_white"
+                android:textSize="26sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/shareReplay"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/public_bg_share_replay_normal"
+            android:drawableStart="@mipmap/public_icon_share_replay"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:text="重播"
+            android:textColor="@color/public_white"
+            android:textSize="24sp" />
+    </LinearLayout>
+</FrameLayout>

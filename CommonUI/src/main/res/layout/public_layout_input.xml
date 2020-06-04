@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    android:background="@color/public_white"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp">
+
+    <ImageView
+        android:id="@+id/chooseVideo"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/public_icon_choose_video_selector" />
+
+    <ImageView
+        android:id="@+id/chooseImage"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@id/chooseVideo"
+        android:src="@drawable/public_icon_choose_image_selector" />
+
+    <ImageView
+        android:id="@+id/chooseAt"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@id/chooseImage"
+        android:src="@mipmap/public_icon_choose_at_normal" />
+
+    <Button
+        android:id="@+id/chooseSend"
+        style="@style/PublicGradientBtnStyle.Main"
+        android:layout_width="130dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="发布" />
+</RelativeLayout>

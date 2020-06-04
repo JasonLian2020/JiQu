@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="40dp"
+    android:paddingTop="30dp"
+    android:paddingEnd="40dp"
+    android:paddingBottom="23dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/userAvatar"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:riv_oval="true" />
+
+    <ImageView
+        android:id="@+id/userFeedback"
+        android:layout_width="42dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:paddingStart="10dp"
+        android:paddingTop="26dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="26dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home_icon_feedback_seletor" />
+
+    <TextView
+        android:id="@+id/userNickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_toStartOf="@id/userFeedback"
+        android:layout_toEndOf="@id/userAvatar"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/public_text_main"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/userDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/userAvatar"
+        android:layout_marginStart="14dp"
+        android:layout_toStartOf="@id/userFeedback"
+        android:layout_toEndOf="@id/userAvatar"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/public_text_main"
+        android:textSize="24sp" />
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/godParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="40dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="40dp"
+    android:background="#EDEDED"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp">
+
+    <ImageView
+        android:layout_width="76dp"
+        android:layout_height="97dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="150dp"
+        android:src="@mipmap/home_icon_god_tag" />
+
+    <!--用户-->
+    <LinearLayout
+        android:id="@+id/godUserLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/godUserAvatar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/godUserNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="14dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxWidth="400dp"
+            android:text="我是大人1号"
+            android:textColor="@color/public_text_main"
+            android:textSize="28sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/godLikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="19"
+            android:textColor="@color/home_text_god_like_selector"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:id="@+id/godLike"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/home_icon_god_like_selector" />
+    </LinearLayout>
+
+    <!--文本-->
+    <TextView
+        android:id="@+id/godContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/godUserLayout"
+        android:layout_marginTop="15dp"
+        android:lineSpacingExtra="15dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+        android:textColor="@color/public_text_main"
+        android:textSize="32sp" />
+
+    <!--图片-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/godRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/godContent"
+        android:layout_marginTop="15dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+    <!--视频-->
+
+</RelativeLayout>

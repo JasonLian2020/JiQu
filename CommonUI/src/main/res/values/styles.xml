@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--*************************Activity Style*************************-->
+    <!--全屏样式-->
+    <style name="public_AppTheme.FullScreen" parent="public_AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!--*************************Activity Style*************************-->
+
+    <!--*************************BottomSheetDialog Style*************************-->
+    <style name="public_BottomSheet.Modal.Base" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/public_bg_dialog_base</item>
+    </style>
+
+    <style name="public_BottomSheet.Modal.Input" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/public_bg_dialog_input</item>
+    </style>
+
+    <!--基础弹窗Style-->
+    <style name="public_BottomSheetDialog.Base" parent="Theme.Design.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="bottomSheetStyle">@style/public_BottomSheet.Modal.Base</item>
+    </style>
+
+    <!--输入弹窗Style-->
+    <style name="public_BottomSheetDialog.Input" parent="public_BottomSheetDialog.Base">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="bottomSheetStyle">@style/public_BottomSheet.Modal.Input</item>
+    </style>
+
+    <!--回复弹窗Style-->
+    <style name="public_BottomSheetDialog.Comment" parent="public_BottomSheetDialog.Base">
+        <item name="bottomSheetStyle">@style/public_BottomSheet.Modal.Base</item>
+    </style>
+    <!--*************************BottomSheetDialog Style*************************-->
+
+    <!--主按钮风格-->
+    <style name="PublicBaseBtnStyle.Main" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/public_text_base_btn_main_selector</item>
+        <item name="android:background">@drawable/public_bg_base_btn_main_selector</item>
+    </style>
+
+    <!--次按钮风格-->
+    <style name="PublicBaseBtnStyle.Second" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/public_text_base_btn_second_selector</item>
+        <item name="android:background">@drawable/public_bg_base_btn_second_selector</item>
+    </style>
+
+    <!--主按钮风格 矩形-->
+    <style name="PublicRectangleBtnStyle.Main" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/public_text_rectangle_btn_main_selector</item>
+        <item name="android:background">@drawable/public_bg_rectangle_btn_main_selector</item>
+    </style>
+
+    <!--次按钮风格 矩形-->
+    <style name="PublicRectangleBtnStyle.Second" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/public_text_rectangle_btn_second_selector</item>
+        <item name="android:background">@drawable/public_bg_rectangle_btn_second_selector</item>
+    </style>
+
+    <!--主按钮风格 渐变-->
+    <style name="PublicGradientBtnStyle.Main" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">28sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/public_text_gradient_btn_main_selector</item>
+        <item name="android:background">@drawable/public_bg_gradient_btn_main_selector</item>
+    </style>
+</resources>

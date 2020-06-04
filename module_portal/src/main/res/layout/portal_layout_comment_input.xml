@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="86dp">
+
+    <TextView
+        android:id="@+id/inputContent"
+        android:layout_width="410dp"
+        android:layout_height="66dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/portal_bg_input_selector"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="回复评论..."
+        android:textColor="@color/public_text_third"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:id="@+id/inputLike"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/inputContent"
+        android:src="@drawable/portal_icon_like_selector" />
+
+    <TextView
+        android:id="@+id/inputLikeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@id/inputLike"
+        android:textColor="@color/portal_text_like_selector"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/inputComment"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="62dp"
+        android:layout_toEndOf="@id/inputLike"
+        android:src="@mipmap/portal_icon_comment"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/inputCommentCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@id/inputComment"
+        android:textColor="#4C4C4C"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/inputFavorite"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="62dp"
+        android:layout_toEndOf="@id/inputComment"
+        android:src="@drawable/portal_icon_favorite_selector" />
+
+    <ImageView
+        android:id="@+id/inputShare"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="37dp"
+        android:layout_toEndOf="@id/inputFavorite"
+        android:src="@mipmap/portal_icon_share" />
+
+</RelativeLayout>

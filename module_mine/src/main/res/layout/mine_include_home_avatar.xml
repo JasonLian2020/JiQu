@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/mineUserAvatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="#FF0000"
+        app:riv_border_color="@color/public_stroke_main"
+        app:riv_border_width="1dp"
+        app:riv_oval="true" />
+
+    <ImageView
+        android:id="@+id/mineEnter"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@mipmap/mine_icon_home_enter" />
+
+    <TextView
+        android:id="@+id/mineUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toStartOf="@id/mineEnter"
+        android:layout_toEndOf="@id/mineUserAvatar"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/public_text_main"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mineUserDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_toStartOf="@id/mineEnter"
+        android:layout_toEndOf="@id/mineUserAvatar"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/public_text_third"
+        android:textSize="12sp" />
+</RelativeLayout>

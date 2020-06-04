@@ -1,0 +1,30 @@
+apply plugin: 'com.mob.sdk'
+
+MobSDK {
+    appKey "2bc94233a16d4"
+    appSecret "087fd30ee00d00383a4bfd6244d25bc6"
+
+    ShareSDK {
+        //平台配置信息
+        devInfo {
+            Wechat {
+                appId "wx64a02b6cb4e94e38"
+                appSecret "f0703135249ee7c3076ada71a978117a"
+            }
+            WechatMoments {
+                appId "wx64a02b6cb4e94e38"
+                appSecret "f0703135249ee7c3076ada71a978117a"
+            }
+            QQ {
+                appId "1109240645"
+                appKey "WRMp3lYvlIkZxaX4"
+                shareByAppClient true
+            }
+            QZone {
+                appId "1109240645"
+                appKey "WRMp3lYvlIkZxaX4"
+                shareByAppClient true
+            }
+        }
+    }
+}

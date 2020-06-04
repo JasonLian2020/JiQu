@@ -1,0 +1,12 @@
+include ':app',
+        ':CommonUI',
+        ':CommonService',
+        ':CommonCore',
+        ':module_home',
+        ':module_mine',
+        ':module_login',
+        ':module_publish',
+        ':module_search',
+        ':module_preview',
+        ':module_portal',
+        ':ThirdLibrarys:ImagePicker'

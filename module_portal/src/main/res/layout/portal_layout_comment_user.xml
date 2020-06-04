@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="99dp"
+    android:background="@color/public_white"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/userAvatar"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        app:riv_oval="true" />
+
+    <Button
+        android:id="@+id/userFollow"
+        style="@style/PublicGradientBtnStyle.Main"
+        android:layout_width="106dp"
+        android:layout_height="52dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:text="关注"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/userNickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/userAvatar"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@id/userFollow"
+        android:layout_toEndOf="@id/userAvatar"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/public_text_main"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/userTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userNickname"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@id/userFollow"
+        android:layout_toEndOf="@id/userAvatar"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/public_text_third"
+        android:textSize="22sp" />
+</RelativeLayout>

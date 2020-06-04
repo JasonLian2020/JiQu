@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/portal_item_include_comment_user" />
+
+        <include layout="@layout/portal_item_include_comment_text" />
+
+        <!--视频-->
+        <FrameLayout
+            android:id="@+id/commentVideoLayout"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp">
+
+            <ImageView
+                android:id="@+id/commentVideoCover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/commentVideoPlay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/portal_icon_comment_pause" />
+        </FrameLayout>
+
+        <include layout="@layout/portal_item_include_comment_input" />
+    </LinearLayout>
+
+    <include layout="@layout/portal_item_include_comment_god" />
+</FrameLayout>
