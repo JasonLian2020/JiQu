@@ -7,6 +7,6 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     api project(":CommonUI")//CommonUI 分别依赖了 CommonRes 和 CommonSDK
-    api project(":CommonService")
-    api project(":CommonCore")//核心基础业务
+    api project(":CommonService")//公共服务模块，用于业务层各个模块之间的交互(自定义方法和类的调用), 包含自定义 Service 接口, 和可用于跨模块传递的自定义类
+    api project(":CommonCore")//核心基础业务模块，为业务层的每个业务模块提供一些与业务有关的基础服务//核心基础业务
 }
